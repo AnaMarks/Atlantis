@@ -1,8 +1,8 @@
-import Processo from "../abstracoes/processo";
-import Cliente from "../modelos/cliente";
-import Endereco from "../modelos/endereco";
+import Processo from "../../abstracoes/processo";
+import Cliente from "../../modelos/cliente";
+import Endereco from "../../modelos/endereco";
 
-export default class CadastroEnderecoTitular extends Processo {
+export default class CadastroEndereco extends Processo {
     private cliente: Cliente
 
     constructor(cliente: Cliente) {

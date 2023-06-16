@@ -3,6 +3,7 @@ import MenuTipoListagemClientes from "../../menus/menuTipoListagemClientes";
 import ListagemTitulares from "./listagemTitulares";
 import ListagemDependentes from "./listagemDependentes";
 import ListagemTitularDep from "./listagemTitularDep";
+import ListagemDependentesTi from "./listagemDependenteTi";
 
 
 export default class TipoListagemClientes extends Processo {
@@ -25,6 +26,10 @@ export default class TipoListagemClientes extends Processo {
                     break;
                 case 3:
                     this.processo = new ListagemTitularDep()
+                    this.processo.processar()
+                    break;
+                case 4: 
+                    this.processo = new ListagemDependentesTi()
                     this.processo.processar()
                     break;
             default:

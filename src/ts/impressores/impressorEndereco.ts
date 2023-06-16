@@ -3,9 +3,8 @@ import Endereco from "../modelos/endereco";
 
 export default class ImpressorEndereco implements Impressor {
     private endereco: Endereco
-    constructor(endereco: Endereco) {
-        this.endereco = endereco
-    }
+    constructor(endereco: Endereco) {this.endereco = endereco}
+    
     imprimir(): string {
         let impressao = `| Endereco:\n`
             + `| rua: ${this.endereco.Rua}\n`

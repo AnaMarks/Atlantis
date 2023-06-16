@@ -24,5 +24,4 @@ export default class Acomodacao {
     public get Suite() { return this.suite }
     public get Climatizacao() { return this.climatizacao }
     public get Garagem() { return this.garagem }
-
 }

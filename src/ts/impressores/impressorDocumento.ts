@@ -4,9 +4,7 @@ import Documento from "../modelos/documento";
 export default class ImpressorDocumento implements Impressor {
     private documento: Documento
 
-    constructor(documento: Documento) {
-        this.documento = documento
-    }
+    constructor(documento: Documento) {this.documento = documento}
 
     imprimir(): string {
         let impressao = `| Documento:\n`

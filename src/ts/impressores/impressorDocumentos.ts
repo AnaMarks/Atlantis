@@ -6,9 +6,7 @@ export default class ImpressorDocumentos implements Impressor {
     private documentos: Documento[]
     private impressor!: Impressor
 
-    constructor(documentos: Documento[]) {
-        this.documentos = documentos
-    }
+    constructor(documentos: Documento[]) {this.documentos = documentos}
 
     imprimir(): string {
         let impressao = ``

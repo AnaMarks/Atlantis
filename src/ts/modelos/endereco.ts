@@ -14,8 +14,7 @@ export default class Endereco implements Prototipo {
         this.cidade = cidade
         this.estado = estado
         this.pais = pais
-        this.codigoPostal = codigoPostal
-    }
+        this.codigoPostal = codigoPostal}
 
     public get Rua() {return this.rua}
     public get Bairro() {return this.bairro}
@@ -26,6 +25,5 @@ export default class Endereco implements Prototipo {
 
     public clonar(): Prototipo {
         let endereco = new Endereco(this.rua, this.bairro, this.cidade, this.estado, this.pais, this.codigoPostal)
-        return endereco
-    }
+        return endereco}
 }
